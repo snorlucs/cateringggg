@@ -1,0 +1,31 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="stile.css"> 
+
+<script>
+      function cambiaPagina()
+	 {
+        var scelta = document.getElementById("menu").value;
+        window.location.href = scelta + ".php";
+      }
+    </script> 
+</head>
+
+
+  <form class="menu-form">
+    <label for="menu">Scegli un Menu</label>
+<select id="menu" name="menu">
+  <option value="pesce">Pesce</option>
+  <option value="carne">Carne</option>
+  <option value="vegano">Vegano</option>
+  <option value="bambino">Bambino</option>
+  <option value="vegetariano">Vegetariano</option>
+  <option value="glutenfree">Glutenfree</option>
+  <option value="fisso">Fisso</option>
+</select> 
+<button type="button" onclick="cambiaPagina()">Vai</button>
+</form>
+
+
+</html>
